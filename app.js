@@ -21,7 +21,7 @@ app.use(shopRoutes);
 
 
 app.use((req,res,next)=> {
-    res.status(404).render('error-page');
+    res.status(404).render('error-page', { pageTitle: 'Page Not Found!' });
 });
 /*
 app.use('/', (req, res, next)=>{
